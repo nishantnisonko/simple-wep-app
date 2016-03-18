@@ -1,0 +1,197 @@
+@borderColor: #e1e8ed;
+body {
+    padding-left: 5%;
+    padding-right: 20%;
+    padding-top: 20px;
+    font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    background: white   ;
+}
+
+.next,
+.prev,
+.back {
+    font-size: 14px;
+    font-weight: 200;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: MediumSeaGreen;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+    &[disabled] {
+        color: gainsboro;
+        cursor: default;
+        text-decoration: none;
+    }
+}
+
+.back {
+    padding-left: 0px;
+}
+
+.details {
+    padding-top: 5px;
+    white-space: pre-line;
+    .body {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .header {
+        padding-top: 20px;
+        border-bottom: 1px solid @borderColor;
+        padding-bottom: 15px;
+        .title {
+            font-size: 17px;
+        }
+        .state {
+            font-weight: normal;
+        }
+    }
+}
+
+.nav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.issue {
+    padding: 15px;
+    border-bottom: 1px solid @borderColor;
+    cursor: pointer;
+    &:hover {
+        background: PapayaWhip   ;
+    }
+}
+
+.issue-list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: flex-start;
+    -webkit-align-items: stretch;
+    -webkit-align-content: flex-start;
+    -moz-flex-direction: column;
+    -moz-justify-content: flex-start;
+    -moz-align-items: stretch;
+    -moz-align-content: flex-start;
+    border-top: 1px solid @borderColor;
+}
+
+.comments {
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    -webkit-align-items: stretch;
+    -webkit-align-content: center;
+    -moz-flex-direction: column;
+    -moz-justify-content: center;
+    -moz-align-items: stretch;
+    -moz-align-content: center;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.state {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.header,
+.nav,
+.comment {
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-align-content: : center;
+    -moz-flex-direction: row;
+    -moz-justify-content: space-between;
+    -moz-align-items: center;
+    -moz-align-content: : center;
+}
+
+.comment {
+    border-bottom: 1px solid @borderColor;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+    &:hover {
+        background: OldLace;
+    }
+    white-space: pre-line;
+}
+
+.comment .userLink,
+.summary .userLink,
+.body .userLink {
+    color: firebrick;
+    font-weight: 500;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.header {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.summary {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    white-space: pre-line;
+}
+
+.labels {
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: flex-start;
+    -webkit-align-items: stretch;
+    -webkit-align-content: : center;
+    -moz-flex-direction: row;
+    -moz-justify-content: flex-start;
+    -moz-align-items: stretch;
+    -moz-align-content: : center;
+    padding-top: 15px;
+}
+
+.label {
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.user {
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-align-content: : center;
+    -moz-flex-direction: row;
+    -moz-align-items: center;
+    -moz-align-content: : center;
+    font-weight: 500;
+    font-size: 13px;
+    a {
+        color: firebrick;
+        text-decoration: none;
+        margin-left: 5px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    img {
+        border-radius: 20px;
+    }
+}
