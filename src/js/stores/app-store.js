@@ -5,8 +5,6 @@ import {
 import TileAPI from '../api/TileAPI';
 import $ from 'jquery';
 
-import Promise from "bluebird";
-
 import {
   EventEmitter
 } from 'events';
