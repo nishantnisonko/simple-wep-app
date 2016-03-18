@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from './header/app-header';
-
 import '../../styles/index';
 
 
